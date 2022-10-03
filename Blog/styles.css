@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.2s ease-out;
+}
+.logo{
+    font-size: 50px;
+    float: left;
+    padding: 10px;
+    padding-left: 100px;
+}
+.logo:hover{
+    color: red;
+}
+header{
+    background: black;
+    color: white;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+nav{
+    list-style: none;
+    float: right;
+    padding: 10px;
+    padding-right: 50px;
+}
+nav li{
+    float: right;
+    padding-left: 30px;
+    padding-right: 50px;
+    
+}
+h2::first-letter{
+    font-size: 54px;   
+}
+nav li a{
+    letter-spacing: 5px;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    
+}
+a:hover {
+    color: red;
+}
+
+.sec{
+    padding-top: 90px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.bigman{
+    padding-top: 15vh;
+    display: inline-table;
+    padding-left: 10vw;  
+}
+.bigman:hover {
+    color: red;
+}
+.texts{
+    padding-top: 15vh;
+    display: block;
+}
+.bigmantext{
+    letter-spacing: 5px;
+    font-size: 74px;
+    padding-bottom: 30px;
+ 
+}
+.bigmantextp{
+    
+    font-size: 32px;
+}
+.bigmanimg{
+    position: absolute;
+    height: calc(100vh - 100px);
+    margin: 0 19vh;
+    right: 5vw;
+    width: 50vw;
+    object-fit:cover;
+}
+.scroller{
+    position:absolute;
+    padding-top: calc(100vh - 300px);
+    padding-left: 30px;
+    right: 4vw;
+}
+.what{
+    padding-left: 10vw;   
+    padding-right: 10vw;   
+}
+.what h1{
+    letter-spacing: 5px;
+    font-size: 50px;
+    padding-bottom: 1vh;
+    padding-top: 30px;
+}
+.what h1:hover{
+    color: red;
+}
+.what h3{
+    letter-spacing: 1px;
+    font-size: 28px;
+    padding-bottom: 60px;
+}
+.representation{
+    padding-top:1px;
+    padding-bottom:100px;
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+}
+.day{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: block;
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.but{
+    font-family: 'Inter', sans-serif;
+    display: block;
+    width: 600px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: black;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    font-size: 50px;
+    letter-spacing: 16px;
+    color: white;
+}
+.but:hover{
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (max-width: 1530px) {
+    .sec{
+        display: block;
+    }
+    .bigmanimg{
+        position:absolute;
+        height: calc(100vh - 100px);
+        margin: 0 auto;
+        right: 5vw;
+        width: 50vw;
+        object-fit:cover;
+    }
+    .scroller{
+        position:absolute;
+        padding-top: calc(100vh - 700px);
+        right: 5vw;
+    }
+    .texts{
+        display: block;
+        text-align: justify;
+    }
+    .what{
+        display: block;
+    }
+}
+@media only screen and (max-width: 1020px) {
+    .sec{
+        display: block;
+    }
+    .day{
+        padding-top:1px;
+        padding-bottom:50px;
+        display: block;
+        height: 200px;
+        width: 100%;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+    .representation{
+        padding-top:1px;
+        padding-bottom:50px;
+        display: block;
+        height: 200px;
+        width: 100%;
+        margin: 0 auto;
+        object-fit: scale-down;
+    }
+    .what{
+        padding-left: 10vw;   
+        padding-right: 2vw;   
+    }
+    header{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        padding: 0;
+    }
+    nav{
+        display: none;
+    }
+    .bigman{
+        padding-top: 4vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .bigmantext{
+        font-size: 40px;
+    }
+    .bigmantextp{
+        font-size: 28px;
+        padding-bottom: 70px;
+    }
+
+    .bigmanimg{
+        display: block;
+        position:relative;
+        height: 50vh;
+        margin: 0 auto;
+        width: calc(100% - 10vw - 10vw);
+        left: 5vw;
+        object-fit:cover;
+        
+    }
+    .scroller{
+        display:none;
+    }
+    .texts{
+        padding-top: 200px;
+        display: block;
+        text-align: left;
+    }
+    
+    .what{
+        display: block;
+    }
+    .what{
+        padding-left: 10vw;   
+        padding-right: 10vw;   
+    }
+    .what h1{
+        letter-spacing: 2px;
+        font-size: 30px;
+        padding-bottom: 1vh;
+        padding-top: 10px;
+    }
+    .what h3{
+        letter-spacing: 1px;
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+    .but{
+        font-family: 'Inter', sans-serif;
+        display: block;
+        width: 300px;
+        height: 50px;
+        margin: 0 auto;
+        background-color: black;
+        margin-bottom: 100px;
+        margin-top: 50px;
+        font-size: 30px;
+        letter-spacing: 16px;
+        color: white;
+    }
+}
