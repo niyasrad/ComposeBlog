@@ -4,6 +4,9 @@
     font-family: 'Inter', sans-serif;
     transition: all 0.2s ease-out;
 }
+html {
+    scroll-behavior: smooth;
+}
 .logo{
     font-size: 50px;
     float: left;
